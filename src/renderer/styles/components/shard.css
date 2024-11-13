@@ -1,0 +1,52 @@
+.premium-card {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(180deg,rgba(110,102,91,1) 0%, rgba(44,40,35,1) 100%);
+        z-index: -1;
+        transition: opacity 0.2s ease;
+        opacity: 0;
+    }
+
+    &:hover::before {
+        transition: opacity 0.2s ease-in-out;
+        background-image: linear-gradient(180deg,rgba(211,165,111,1) 0%, rgba(64,58,49,1) 100%);
+        opacity: 1;
+    }
+
+    .premium-card__inner {
+        &:hover {
+            background: linear-gradient(180deg,rgba(36, 32, 28, 1) 0%, rgba(22,20,18,1) 100%);
+        }
+    }
+}
+
+.shard-card {
+    position: relative;
+    border: 1px solid hsl(var(--secondary-foreground)/0.1);
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: hsl(var(--muted)/0.1);
+        border: 1px solid hsl(var(--secondary-foreground)/0.3);
+        z-index: -1;
+        transition: opacity 0.2s ease;
+        opacity: 0;
+    }
+
+    &:hover::before {
+        transition: opacity 0.2s ease-in-out;
+        background: hsl(var(--muted)/0.4);
+        opacity: 1;
+    }
+}

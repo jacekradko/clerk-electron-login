@@ -1,0 +1,580 @@
+.typographyTypography1Regular 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing0);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography1Medium 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing0);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography1Semibold 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing0);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography1Bold 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing0);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography1Capsregular 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography1Capsmedium 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography1Capssemibold 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography1Capsbold 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize0);
+  line-height: var(--measureLineHeightLineHeightLineheights0);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography2Regular 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography2Medium 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography2Semibold 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography2Bold 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography2Capsregular 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography2Capsmedium 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography2Capssemibold 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+/* Subtitles and accents */
+.typographyTypography2Capsbold 
+ {
+  
+  font-family: "TASA Explorer";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize1);
+  line-height: var(--measureLineHeightLineHeightLineheights1);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing1);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography3Regular 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize2);
+  line-height: var(--measureLineHeightLineHeightLineheights2);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography3Medium 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize2);
+  line-height: var(--measureLineHeightLineHeightLineheights2);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography3Semibold 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize2);
+  line-height: var(--measureLineHeightLineHeightLineheights2);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography3Bold 
+ {
+  
+  font-family: "TASA Orbiter Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize2);
+  line-height: var(--measureLineHeightLineHeightLineheights2);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing2);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography4Regular 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize3);
+  line-height: var(--measureLineHeightLineHeightLineheights3);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing3);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography4Medium 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize3);
+  line-height: var(--measureLineHeightLineHeightLineheights3);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing3);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography4Semibold 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize3);
+  line-height: var(--measureLineHeightLineHeightLineheights3);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing3);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography4Bold 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize3);
+  line-height: var(--measureLineHeightLineHeightLineheights3);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing3);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography5Regular 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize4);
+  line-height: var(--measureLineHeightLineHeightLineheights4);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing4);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography5Medium 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize4);
+  line-height: var(--measureLineHeightLineHeightLineheights4);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing4);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography5Semibold 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize4);
+  line-height: var(--measureLineHeightLineHeightLineheights4);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing4);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography5Bold 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize4);
+  line-height: var(--measureLineHeightLineHeightLineheights4);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing4);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography6Regular 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize5);
+  line-height: var(--measureLineHeightLineHeightLineheights5);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing5);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography6Medium 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize5);
+  line-height: var(--measureLineHeightLineHeightLineheights5);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing5);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography6Semibold 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize5);
+  line-height: var(--measureLineHeightLineHeightLineheights5);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing5);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography6Bold 
+ {
+  
+  font-family: "TASA Orbiter Deck";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize5);
+  line-height: var(--measureLineHeightLineHeightLineheights5);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing5);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography7Regular 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize6);
+  line-height: var(--measureLineHeightLineHeightLineheights6);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing6);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography7Medium 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize6);
+  line-height: var(--measureLineHeightLineHeightLineheights6);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing6);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography7Semibold 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize6);
+  line-height: var(--measureLineHeightLineHeightLineheights6);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing6);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography7Bold 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize6);
+  line-height: var(--measureLineHeightLineHeightLineheights6);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing6);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography8Regular 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize7);
+  line-height: var(--measureLineHeightLineHeightLineheights7);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing7);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography8Medium 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize7);
+  line-height: var(--measureLineHeightLineHeightLineheights7);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing7);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography8Semibold 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize7);
+  line-height: var(--measureLineHeightLineHeightLineheights7);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing7);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography8Bold 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize7);
+  line-height: var(--measureLineHeightLineHeightLineheights7);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing7);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography9Regular 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--measureFontSizeFontSizeFontsize8);
+  line-height: var(--measureLineHeightLineHeightLineheights8);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing8);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography9Medium 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--measureFontSizeFontSizeFontsize8);
+  line-height: var(--measureLineHeightLineHeightLineheights8);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing8);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography9Semibold 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--measureFontSizeFontSizeFontsize8);
+  line-height: var(--measureLineHeightLineHeightLineheights8);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing8);
+  text-indent: 0px;
+  
+}    
+
+.typographyTypography9Bold 
+ {
+  
+  font-family: "TASA Orbiter Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--measureFontSizeFontSizeFontsize8);
+  line-height: var(--measureLineHeightLineHeightLineheights8);
+  letter-spacing: var(--measureLetterSpacingLetterSpacingLetterspacing8);
+  text-indent: 0px;
+  
+}    
+

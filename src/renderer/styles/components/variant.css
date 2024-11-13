@@ -1,0 +1,16 @@
+.image-shadow {
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.66);
+}
+
+.variant-overlay {
+    &:before {
+        content: '';
+        backdrop-filter: blur(1.25px);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+}

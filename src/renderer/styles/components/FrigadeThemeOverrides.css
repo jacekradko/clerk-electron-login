@@ -1,0 +1,105 @@
+.FrigadeThemeOverrides {
+    & .fr-tooltip-spotlight {
+        box-shadow: rgba(0, 0, 0, 0.8) -50px -5000px 0px 20000px !important;
+        border-radius: 8px !important;
+        border: 2px solid hsl(var(--background));
+        background-color: rgba(255, 255, 255, 0.06) !important;
+        z-index:51!important;
+    }
+
+    & .fr-dot {
+        height: 16px!important;
+        width: 16px!important;
+        top:16px!important;
+        left:16px!important;
+    }
+
+    & .fr-dot-pulse {
+        height: 40px!important;
+        width: 40px!important;
+        top:4px!important;
+        left:4px!important;
+    }
+
+    & .fr-button-plain {
+        padding: 8px 8px;
+
+        & svg{
+            width:20px;
+            height:20px;
+            top:16px!important;
+            right:10px!important;
+        }
+    }
+
+    & .fr-progress {
+        padding: 2px 12px;
+        border-radius: 4px;
+        border: 1px solid hsl(var(--muted-foreground) / 0.3);
+        font-size: 14px;
+        color: hsl(var(--muted-foreground));
+        background: hsl(var(--background) / 0.3);
+    }
+
+    & .fr-tooltip{
+        background-color: hsl(var(--background));
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 1px 2px 0px rgba(255,255,255,0.08), 0 6px 12px 0px rgba(255,255,255,0.08), 0 12px 24px 0px rgba(255,255,255,0.06);
+        border:none;
+        border-radius:8px;
+        background: linear-gradient(0deg, hsl(var(--muted) / 0.4) 0%, hsl(var(--muted) / 0.6) 100%);
+        backdrop-filter: blur(16px);
+    }
+
+    & .fr-image {
+        margin:0 auto;
+    }
+}
+
+.FrigadeChecklistOverrides {
+    div:first-child{
+        gap: 1rem;
+    }
+
+    .fr-image {
+        box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.06);
+        overflow: hidden;
+    }
+
+
+    [type='button'] {
+        & div, svg{
+            pointer-events: none;
+        }
+    }
+
+    button {
+        & *{
+            pointer-events: none;
+        }
+    }
+
+    [data-state='closed'] {
+        background: hsl(var(--muted)/0.4);
+        border-radius: var(--radius);
+    }
+    [data-state='closed']:first-child {
+        background: transparent;
+        border-radius: var(--radius);
+    }
+    .fr-field-radio-value{
+        border: 1px dashed hsl(var(--muted-foreground));
+    }
+    .fr-collapsible-step-icon{
+        color: hsl(var(--primary))
+    }
+    [data-state='open'] {
+            background: hsl(var(--muted)/0.4);
+            & div {
+                background: transparent;
+            }
+
+    }
+
+    --fr-space-5: 18px
+}
+
