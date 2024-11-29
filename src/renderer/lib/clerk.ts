@@ -8,10 +8,10 @@ const KEY = '__clerk_client_jwt'
 // Cache the Clerk session
 const MemoryTokenCache = {
 	async getToken(key: string) {
-		return await getToken(key)
+		return await window.electron.ipcRenderer.invoke('auth:token:get', key)
 	},
-	async saveToken(key: string, value: string) {
-		return sendToken(value, key)
+	async saveToken(key: string, token: string) {
+		return window.electron.ipcRenderer.send('auth:token', token, key)
 	},
 	clearToken(key: string) {
 		sendToken(null, key)

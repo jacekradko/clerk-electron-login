@@ -1,7 +1,9 @@
 appId: com.electron.app
 productName: clerk-electron-login
+asar: true
 directories:
   buildResources: build
+  output: 'release/${platform}'
 files:
   - '!**/.vscode/*'
   - '!src/*'
@@ -29,15 +31,24 @@ mac:
 dmg:
   artifactName: ${name}-${version}.${ext}
 linux:
+  executableArgs: ['--no-sandbox']
   target:
     - AppImage
     - snap
     - deb
   maintainer: electronjs.org
   category: Utility
+  desktop:
+    StartupNotify: false
+    Encoding: UTF-8
+    MimeType: 'x-scheme-handler/vite;'
 appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
 publish:
   provider: generic
   url: https://example.com/auto-updates
+protocols:
+  name: 'Electron Example App'
+  role: 'Viewer'
+  schemes: ['vite']

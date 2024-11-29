@@ -10,6 +10,7 @@ export const PageHeader = memo(() => {
 const { signOut } = useClerk()
 
   const signOutAction = async () => {
+    window.electron.ipcRenderer.send('auth:logout')
 		await router.navigate({ to: signoutRoute.fullPath })
 	}
 

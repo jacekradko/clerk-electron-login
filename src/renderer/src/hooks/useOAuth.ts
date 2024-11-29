@@ -1,5 +1,6 @@
-import { useSignIn, useSignUp } from '@clerk/clerk-react'
+import { useClerk, useSignIn, useSignUp } from '@clerk/clerk-react'
 import type { OAuthStrategy } from '@clerk/types'
+import { useNavigate } from '@tanstack/react-router'
 
 export type UseOAuthFlowParams = {
 	strategy: OAuthStrategy
@@ -15,10 +16,12 @@ export type StartOAuthFlowParams = {
 // @ts-ignore
 export const useOAuth = (useOAuthParams: UseOAuthFlowParams) => {
 	const { strategy } = useOAuthParams || {}
+  const navigate = useNavigate()
 	if (!strategy) {
 		throw new Error('Missing oauth strategy')
 	}
-	const { signIn, setActive, isLoaded: isSignInLoaded } = useSignIn()
+  const { setActive } = useClerk()
+	const { signIn, isLoaded: isSignInLoaded } = useSignIn()
 	const { signUp, isLoaded: isSignUpLoaded } = useSignUp()
 
 	async function startOAuthFlow(startOAuthFlowParams?: StartOAuthFlowParams) {
@@ -39,7 +42,6 @@ export const useOAuth = (useOAuthParams: UseOAuthFlowParams) => {
 		// For more information go to:
 		// https://docs.expo.dev/versions/latest/sdk/auth-session/#authsessionmakeredirecturi
 		const oauthRedirectUrl = startOAuthFlowParams?.redirectUrl || useOAuthParams.redirectUrl || `${import.meta.env.VITE_DOMAIN}/sso-callback`
-
 		await signIn.create({ strategy, redirectUrl: oauthRedirectUrl })
 
 		const { externalVerificationRedirectURL } = signIn.firstFactorVerification
@@ -47,40 +49,45 @@ export const useOAuth = (useOAuthParams: UseOAuthFlowParams) => {
 		if (strategy === 'oauth_google') {
 			externalVerificationRedirectURL?.searchParams.set('prompt', 'select_account')
 		}
+		window.electron.ipcRenderer.send('auth:open', externalVerificationRedirectURL?.toString() || '')
 
-		// openAuthWindow(externalVerificationRedirectURL?.toString() || '')
 
-		// onAuthCallback(async (ssoUrl: string) => {
-		// 	const url = new URL(ssoUrl)
-    //
-		// 	const params = url.searchParams
-    //
-		// 	const rotatingTokenNonce = params.get('rotating_token_nonce') || ''
-		// 	await signIn.reload({ rotatingTokenNonce })
-    //
-		// 	const { status, firstFactorVerification } = signIn
-    //
-		// 	let createdSessionId = ''
-    //
-		// 	if (status === 'complete') {
-		// 		createdSessionId = signIn.createdSessionId!
-		// 	} else if (firstFactorVerification.status === 'transferable') {
-		// 		await signUp.create({
-		// 			transfer: true,
-		// 			unsafeMetadata: startOAuthFlowParams?.unsafeMetadata || useOAuthParams.unsafeMetadata
-		// 		})
-		// 		createdSessionId = signUp.createdSessionId || ''
-		// 	}
-    //
-		// 	if (createdSessionId) {
-		// 		setActive({
-		// 			session: createdSessionId,
-		// 			beforeEmit: () => navigate({ to: '/' })
-		// 		})
-		// 	} else {
-		// 		// Use signIn or signUp for next steps such as MFA
-		// 	}
-		// })
+    const authCallbackOff = window.electron.ipcRenderer.on('auth:callback', async (_event, ssoUrl: string) => {
+			const url = new URL(ssoUrl)
+
+			const params = url.searchParams
+
+			const rotatingTokenNonce = params.get('rotating_token_nonce') || ''
+			let createdSessionId = params.get('created_session_id') || ''
+      if (!createdSessionId) {
+        await signIn.reload({ rotatingTokenNonce })
+      } else {
+        setActive({ session: createdSessionId, beforeEmit: () => navigate({ to: '/' })})
+        return
+      }
+
+			const { status, firstFactorVerification } = signIn
+
+			if (status === 'complete') {
+				createdSessionId = signIn.createdSessionId!
+			} else if (firstFactorVerification.status === 'transferable') {
+				await signUp.create({
+					transfer: true,
+					unsafeMetadata: startOAuthFlowParams?.unsafeMetadata || useOAuthParams.unsafeMetadata
+				})
+				createdSessionId = signUp.createdSessionId || ''
+			}
+
+			if (createdSessionId) {
+				setActive({
+					session: createdSessionId,
+					beforeEmit: () => navigate({ to: '/' })
+				})
+			} else {
+				// Use signIn or signUp for next steps such as MFA
+			}
+      authCallbackOff()
+		})
 	}
 
 	return {

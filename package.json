@@ -14,8 +14,8 @@
     "postinstall": "ow-electron-builder install-app-deps",
     "build:unpack": "npm run build && ow-electron-builder --dir",
     "build:win": "npm run build && ow-electron-builder --win",
-    "build:mac": "ELECTRON_EXEC_PATH=node_modules/@overwolf/ow-electron/dist/electronelectron-vite build && ow-electron-builder --mac",
-    "build:linux": "ELECTRON_EXEC_PATH=node_modules/@overwolf/ow-electron/dist/electronelectron-vite build && ow-electron-builder --linux",
+    "build:mac": "ELECTRON_EXEC_PATH=node_modules/@overwolf/ow-electron/dist/electron electron-vite build && ow-electron-builder --mac",
+    "build:linux": "ELECTRON_EXEC_PATH=node_modules/@overwolf/ow-electron/dist/electron electron-vite build && ow-electron-builder --linux",
     "build:release": "cross-env PRODUCTION=true ELECTRON_EXEC_PATH=node_modules/@overwolf/ow-electron/dist/electron electron-vite build -m production",
     "start": "cross-env DEVELOPMENT=true ELECTRON_EXEC_PATH=node_modules/@overwolf/ow-electron/dist/electron electron-vite dev --watch"
   },

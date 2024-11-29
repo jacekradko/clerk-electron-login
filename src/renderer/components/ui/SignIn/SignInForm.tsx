@@ -125,7 +125,7 @@ export const SignInForm = ({ className, ...props }: SignInTypes) => {
 		if (signIn) {
 			if (strategy === 'oauth_google') {
 				try {
-					googleOauthFlow({ redirectUrl: `${import.meta.env.VITE_DOMAIN}/sso-callback` })
+					googleOauthFlow({ redirectUrl: `${import.meta.env.VITE_HTTPS_DOMAIN}/sso-callback` })
 				} catch (err: unknown) {
 					displayFormErrors(err as SignInError)
 				}
@@ -204,7 +204,7 @@ export const SignInForm = ({ className, ...props }: SignInTypes) => {
 							<div className="col-span-2 text-center align-center text-muted-foreground">Or continue with</div>
 							<Separator className="grid col-span-1" />
 						</div>
-						<div className="grid grid-cols-3 gap-2 hidden">
+						<div className="grid grid-cols-3 gap-2">
 							<Button variant="secondary" type="button" disabled={isLoading} onClick={() => signInWith('oauth_google')}>
 								{isLoading ? <Icons.loaderSquare className="mr-2 h-4 w-4" /> : <Icons.google className="mr-2 h-4 w-4" />} Google
 							</Button>
