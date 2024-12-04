@@ -34,7 +34,7 @@
     "@babel/plugin-transform-class-properties": "^7.25.4",
     "@babel/runtime": "^7.24.7",
     "@clerk/clerk-js": "^5.33.0",
-    "@clerk/clerk-react": "^5.15.3",
+    "@clerk/clerk-react": "5.18.1-snapshot.v20241204220050",
     "@clerk/themes": "^2.1.43",
     "@datadog/browser-logs": "^4.50.1",
     "@datadog/browser-rum": "^4.50.1",
@@ -173,5 +173,6 @@
     "react-dom": "^18.3.1",
     "typescript": "^5.6.2",
     "vite": "^5.4.11"
-  }
+  },
+  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
 }
