@@ -59,12 +59,7 @@ export const useOAuth = (useOAuthParams: UseOAuthFlowParams) => {
 
 			const rotatingTokenNonce = params.get('rotating_token_nonce') || ''
 			let createdSessionId = params.get('created_session_id') || ''
-      if (!createdSessionId) {
-        await signIn.reload({ rotatingTokenNonce })
-      } else {
-        setActive({ session: createdSessionId, beforeEmit: () => navigate({ to: '/' })})
-        return
-      }
+      await signIn.reload({ rotatingTokenNonce })
 
 			const { status, firstFactorVerification } = signIn
 

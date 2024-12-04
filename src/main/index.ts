@@ -136,7 +136,7 @@ const createWindow = async () => {
   mainWindow.webContents.session.webRequest.onBeforeSendHeaders(
     filter,
     (details, callback) => {
-      if (details.requestHeaders.Origin === import.meta.env.VITE_UI_DOMAIN) {
+      if (details.requestHeaders.Origin === import.meta.env.VITE_DOMAIN) {
         details.requestHeaders.Origin = import.meta.env.VITE_APP_DOMAIN;
       }
       if (details.requestHeaders.authorization) {
@@ -152,7 +152,7 @@ const createWindow = async () => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       details.responseHeaders["access-control-allow-origin"] =
-        import.meta.env.VITE_UI_DOMAIN;
+        import.meta.env.VITE_DOMAIN;
 
       if (details.responseHeaders?.location) {
         details.responseHeaders.location = [`${uiSource}#/sso-callback`];
@@ -257,7 +257,7 @@ const createAuthWindow = (authenticationUrl: string) => {
   webRequest.onBeforeRequest(filter, async (details, callback) => {
     try {
       callback({
-        redirectURL: details.url.replace("https", "clerk"),
+        redirectURL: details.url.replace("http", "clerk"),
       });
       // destroyAuthWin();
     } catch (error) {

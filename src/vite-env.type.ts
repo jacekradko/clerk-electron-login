@@ -3,7 +3,6 @@
 
 interface ImportMetaEnv {
 
-	readonly VITE_UI_DOMAIN: string
 	readonly VITE_APP_DOMAIN: string
 	readonly VITE_DOMAIN: string
 	readonly VITE_HUB_DOMAIN: string
