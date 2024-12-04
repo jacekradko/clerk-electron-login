@@ -129,7 +129,7 @@ const createWindow = async () => {
   const filter = {
     urls: [
       `https://${import.meta.env.VITE_CLERK_DOMAIN}/*`,
-      "https://native-pup-85.clerk.accounts.dev/*",
+      "https://*.clerk.accounts.dev/*",
     ],
   };
 
@@ -165,7 +165,7 @@ const createWindow = async () => {
   const clerkTokenFilter = {
     urls: [
       `https://${import.meta.env.VITE_CLERK_DOMAIN}/v1/client/session/*`,
-      "https://native-pup-85.clerk.accounts.dev/v1/client/sessions/*",
+      "https://*.clerk.accounts.dev/v1/client/sessions/*",
     ],
   };
 
