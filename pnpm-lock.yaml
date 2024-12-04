@@ -34,8 +34,8 @@ importers:
         specifier: ^5.33.0
         version: 5.34.5(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@clerk/clerk-react':
-        specifier: ^5.15.3
-        version: 5.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 5.18.1-snapshot.v20241204220050
+        version: 5.18.1-snapshot.v20241204220050(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@clerk/themes':
         specifier: ^2.1.43
         version: 2.1.46
@@ -83,7 +83,7 @@ importers:
         version: 31.4.0
       '@overwolf/ow-electron-builder':
         specifier: ^25.0.6
-        version: 25.0.6(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5))
+        version: 25.0.6(electron-builder-squirrel-windows@25.0.5)
       '@overwolf/ow-electron-packages-types':
         specifier: ^0.0.13
         version: 0.0.13
@@ -654,8 +654,8 @@ packages:
       react: '>=18'
       react-dom: '>=18'
 
-  '@clerk/clerk-react@5.15.3':
-    resolution: {integrity: sha512-Ha7Cjiffk3GT0+lJgrtJfeTC9P1kIdmErjQc0t6+lcx12qZwnO1fsf5fp6GND6+P+VtjbgGOPrQmPoJoEcI3cA==}
+  '@clerk/clerk-react@5.18.1-snapshot.v20241204220050':
+    resolution: {integrity: sha512-Qtra5/9dU/4aGIoXERU4LMfvAu484XYc9uWx3xAnUdJMEeF9fmJqj+Wxc0MOZSYFCWRvqhlEBgpG08CIKL/hyg==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18 || ^19.0.0-0
@@ -665,8 +665,8 @@ packages:
     resolution: {integrity: sha512-8EKgl3s68uOqmBvuIqhBdfxMmmu9iG1LBZFx6n0ShOz+6Zvr/MtWZgiB20bhan9R8FEeayG0wbcMbaXM7f9UlQ==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/shared@2.12.1':
-    resolution: {integrity: sha512-ezX/BXnMJ1rH7vX4H3nXpZ3WW8m1lbyri5dHOoDlREUOe/zr9lawUgVx+75aTxrVPtK7u8XwzMj/rT2cMfMmqw==}
+  '@clerk/shared@2.16.0':
+    resolution: {integrity: sha512-JM5GZcrnvppV+06v5ebsjTI5vGQFGI6TlrLiAHAfcOo/numCDR3EN5MWQW27kD09bsrRtgBNsPiejTpMqXGWjA==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18 || ^19.0.0-0
@@ -677,8 +677,8 @@ packages:
       react-dom:
         optional: true
 
-  '@clerk/shared@2.16.0':
-    resolution: {integrity: sha512-JM5GZcrnvppV+06v5ebsjTI5vGQFGI6TlrLiAHAfcOo/numCDR3EN5MWQW27kD09bsrRtgBNsPiejTpMqXGWjA==}
+  '@clerk/shared@2.18.1-snapshot.v20241204220050':
+    resolution: {integrity: sha512-8Z4aMBTCyuQNu+p+pBQNlSZu5gtj1AI5N1BPdMnOaje5+nDrRu/KB5qMDReynsFcJUd0gqIS1yrKFkPuLturdA==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       react: ^18 || ^19.0.0-0
@@ -693,12 +693,12 @@ packages:
     resolution: {integrity: sha512-P+4t5hLANZDEKFQhyUijKyQGFO6TOnidD3x4avnL84Pi1VkxYVUL+PeWH2oDKzbGHcNcsZ80x8plpz3vVN0GDQ==}
     engines: {node: '>=18.17.0'}
 
-  '@clerk/types@4.32.0':
-    resolution: {integrity: sha512-6oqRJsQE8GIThVyPBAO0kJP0pZJ1c11Hz0qabDk9lStoxjHy7fRIcIm/JX5xlA6rjilWBMEgJr4C0a36mJvVXg==}
-    engines: {node: '>=18.17.0'}
-
   '@clerk/types@4.34.1':
     resolution: {integrity: sha512-FaeHmmoZkIrPrU6AOJ8FUke+LM8ZH072w0Aog6kbQGL3bCBZgUGFy7faTzozxbd+TWTbzVDoTAbDeZCq21UOFg==}
+    engines: {node: '>=18.17.0'}
+
+  '@clerk/types@4.37.0-snapshot.v20241204220050':
+    resolution: {integrity: sha512-7PrKbelv05iENrCis8s27iHsQvVQH3spQzvKav1dxX5RPLjDIGqTIm8RB8pr3HNLuEB5cYCsHMljmmIZ/39UCw==}
     engines: {node: '>=18.17.0'}
 
   '@coinbase/wallet-sdk@4.0.4':
@@ -6584,10 +6584,10 @@ snapshots:
       - '@types/react'
       - supports-color
 
-  '@clerk/clerk-react@5.15.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/clerk-react@5.18.1-snapshot.v20241204220050(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/shared': 2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/types': 4.32.0
+      '@clerk/shared': 2.18.1-snapshot.v20241204220050(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/types': 4.37.0-snapshot.v20241204220050
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.4.1
@@ -6596,9 +6596,9 @@ snapshots:
     dependencies:
       '@clerk/types': 4.34.1
 
-  '@clerk/shared@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/shared@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/types': 4.32.0
+      '@clerk/types': 4.34.1
       dequal: 2.0.3
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
@@ -6608,9 +6608,9 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@clerk/shared@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@clerk/shared@2.18.1-snapshot.v20241204220050(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@clerk/types': 4.34.1
+      '@clerk/types': 4.37.0-snapshot.v20241204220050
       dequal: 2.0.3
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.5
@@ -6625,11 +6625,11 @@ snapshots:
       '@clerk/types': 4.34.1
       tslib: 2.4.1
 
-  '@clerk/types@4.32.0':
+  '@clerk/types@4.34.1':
     dependencies:
       csstype: 3.1.1
 
-  '@clerk/types@4.34.1':
+  '@clerk/types@4.37.0-snapshot.v20241204220050':
     dependencies:
       csstype: 3.1.1
 
@@ -6823,7 +6823,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.0
       '@emotion/babel-plugin': 11.13.5
-      '@emotion/cache': 11.11.0
+      '@emotion/cache': 11.13.5
       '@emotion/serialize': 1.3.3
       '@emotion/use-insertion-effect-with-fallbacks': 1.1.0(react@18.3.1)
       '@emotion/utils': 1.4.2
@@ -6861,12 +6861,12 @@ snapshots:
 
   '@emotion/sheet@1.4.0': {}
 
-  '@emotion/styled@11.13.5(@emotion/react@11.11.1(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1)':
+  '@emotion/styled@11.13.5(@emotion/react@11.13.5(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.26.0
       '@emotion/babel-plugin': 11.13.5
       '@emotion/is-prop-valid': 1.3.1
-      '@emotion/react': 11.11.1(@types/react@18.3.12)(react@18.3.1)
+      '@emotion/react': 11.13.5(@types/react@18.3.12)(react@18.3.1)
       '@emotion/serialize': 1.3.3
       '@emotion/use-insertion-effect-with-fallbacks': 1.1.0(react@18.3.1)
       '@emotion/utils': 1.4.2
@@ -7050,8 +7050,8 @@ snapshots:
 
   '@hookform/devtools@4.3.1(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/react': 11.11.1(@types/react@18.3.12)(react@18.3.1)
-      '@emotion/styled': 11.13.5(@emotion/react@11.11.1(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1)
+      '@emotion/react': 11.13.5(@types/react@18.3.12)(react@18.3.1)
+      '@emotion/styled': 11.13.5(@emotion/react@11.13.5(@types/react@18.3.12)(react@18.3.1))(@types/react@18.3.12)(react@18.3.1)
       '@types/lodash': 4.17.13
       little-state-machine: 4.8.0(react@18.3.1)
       lodash: 4.17.21
@@ -7252,7 +7252,7 @@ snapshots:
 
   '@overwolf/overwolf-api-ts@1.3.5': {}
 
-  '@overwolf/ow-app-builder-lib@25.0.6(dmg-builder@25.0.5(electron-builder-squirrel-windows@25.0.5))(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5))':
+  '@overwolf/ow-app-builder-lib@25.0.6(dmg-builder@25.0.5)(electron-builder-squirrel-windows@25.0.5)':
     dependencies:
       '@develar/schema-utils': 2.6.5
       '@electron/notarize': 2.3.2
@@ -7289,9 +7289,9 @@ snapshots:
       - bluebird
       - supports-color
 
-  '@overwolf/ow-electron-builder@25.0.6(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5))':
+  '@overwolf/ow-electron-builder@25.0.6(electron-builder-squirrel-windows@25.0.5)':
     dependencies:
-      '@overwolf/ow-app-builder-lib': 25.0.6(dmg-builder@25.0.5(electron-builder-squirrel-windows@25.0.5))(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5))
+      '@overwolf/ow-app-builder-lib': 25.0.6(dmg-builder@25.0.5)(electron-builder-squirrel-windows@25.0.5)
       builder-util: 25.0.3
       builder-util-runtime: 9.2.5
       chalk: 4.1.2
@@ -8802,7 +8802,7 @@ snapshots:
 
   app-builder-bin@5.0.0-alpha.7: {}
 
-  app-builder-lib@25.0.5(dmg-builder@25.0.5(electron-builder-squirrel-windows@25.0.5))(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5)):
+  app-builder-lib@25.0.5(dmg-builder@25.0.5)(electron-builder-squirrel-windows@25.0.5):
     dependencies:
       '@develar/schema-utils': 2.6.5
       '@electron/notarize': 2.3.2
@@ -9557,7 +9557,7 @@ snapshots:
 
   dmg-builder@25.0.5(electron-builder-squirrel-windows@25.0.5):
     dependencies:
-      app-builder-lib: 25.0.5(dmg-builder@25.0.5(electron-builder-squirrel-windows@25.0.5))(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5))
+      app-builder-lib: 25.0.5(dmg-builder@25.0.5)(electron-builder-squirrel-windows@25.0.5)
       builder-util: 25.0.3
       builder-util-runtime: 9.2.5
       fs-extra: 10.1.0
@@ -9629,7 +9629,7 @@ snapshots:
 
   electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5):
     dependencies:
-      app-builder-lib: 25.0.5(dmg-builder@25.0.5(electron-builder-squirrel-windows@25.0.5))(electron-builder-squirrel-windows@25.0.5(dmg-builder@25.0.5))
+      app-builder-lib: 25.0.5(dmg-builder@25.0.5)(electron-builder-squirrel-windows@25.0.5)
       archiver: 5.3.2
       builder-util: 25.0.3
       fs-extra: 10.1.0
