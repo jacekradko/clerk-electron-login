@@ -199,7 +199,7 @@ export const SignInForm = ({ className, ...props }: SignInTypes) => {
 								Sign In
 							</FancyButton>
 						</div>
-						<div className="relative grid grid-cols-4 text-xs ggSmallCaps items-center hidden">
+						<div className="relative grid grid-cols-4 text-xs ggSmallCaps items-center">
 							<Separator className="col-span-1" />
 							<div className="col-span-2 text-center align-center text-muted-foreground">Or continue with</div>
 							<Separator className="grid col-span-1" />
