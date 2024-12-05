@@ -13,6 +13,7 @@ export const HubClerkProvider = ({ children }: PropsWithChildren) => {
 		afterSignOutUrl: '/signin',
 		routerPush: (to: string) => router.navigate({ to }),
 		routerReplace: (to: string) => router.navigate({ to }),
+    allowedRedirectOrigins: ['clerk://local.hub.electron.vite'],
 		appearance: {
 			baseTheme: dark,
 			layout: {
@@ -26,9 +27,10 @@ export const HubClerkProvider = ({ children }: PropsWithChildren) => {
 		}
 	}
 
-	if (!import.meta.env.VITE_DOMAIN.match('http')) {
+	// if (!import.meta.env.VITE_DOMAIN.match('http')) {
 		clerkProps.Clerk = getClerkInstance({ publishableKey: import.meta.env.VITE_CLERK_PUBLIC_KEY }) as unknown as ClerkProp
-	}
+	// }
 
 	return <ClerkProvider {...(clerkProps as ClerkProviderProps)}>{children}</ClerkProvider>
 }
+

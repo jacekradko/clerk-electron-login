@@ -10,6 +10,7 @@ export const Signout = () => {
   const session = useSession();
   const { isSignedIn } = useAuth();
 
+
   useEffect(() => {
     void router.invalidate();
   }, []);

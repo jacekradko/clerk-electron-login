@@ -3,11 +3,11 @@ import { memo } from 'react'
 import { router } from '@/src/app/router'
 import { HeaderTitle } from '@/components/header/HeaderTitle'
 import { signoutRoute } from '@/src/app/route-tree'
-import { useClerk } from '@clerk/clerk-react'
+import { useAuth } from '@clerk/clerk-react'
 import { Button } from '@/components/ui/button'
 
 export const PageHeader = memo(() => {
-const { signOut } = useClerk()
+const { signOut } = useAuth()
 
   const signOutAction = async () => {
     window.electron.ipcRenderer.send('auth:logout')

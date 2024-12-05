@@ -4,7 +4,7 @@ import { Loading } from '@/components/fallbacks/Loading'
 import { QueryErrorResetBoundary } from '@tanstack/react-query'
 import { ErrorBoundary } from 'react-error-boundary'
 import { Button } from '@/components/ui/button'
-import { useClerk } from '@clerk/clerk-react'
+import { useAuth, useClerk } from '@clerk/clerk-react'
 
 import { ExitIcon, ReloadIcon } from '@radix-ui/react-icons'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -31,7 +31,7 @@ export const PageLayout = () => {
 
 export const App = () => {
 	const router = useRouter()
-	const { signOut } = useClerk()
+	const { signOut } = useAuth()
 
 	const fallbackSignoutAction = async () => {
 		await router.navigate({ to: signoutRoute.fullPath })
