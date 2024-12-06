@@ -1,6 +1,6 @@
 import { createRootRouteWithContext, createRoute, redirect } from '@tanstack/react-router'
 import { App, PageLayout } from '@/src/app/pages/layout'
-import { useClerk } from '@clerk/clerk-react'
+import { useSession } from '@clerk/clerk-react'
 import { SignInForm } from '@/components/ui/SignIn/SignInForm'
 import { AuthLayout } from '@/src/app/pages/auth/AuthLayout'
 import { SignUpForm } from '@/components/ui/SignUp/SignUpForm'
@@ -13,7 +13,7 @@ import { TanStackRouterDevtools } from '@/components/TanStackRouterDevTools'
 import { Home } from './pages/home'
 
 interface RouteContext {
-	clerk: ReturnType<typeof useClerk>
+	session: ReturnType<typeof useSession>
 	queryClient: QueryClient
 }
 
@@ -30,7 +30,7 @@ const authenticatedVirtualRoute = createRoute({
 	getParentRoute: () => rootRoute,
 	id: '_authenticated',
 	beforeLoad: async ({ location, context }) => {
-		if (!context.clerk.session) {
+		if (!context.session?.isSignedIn) {
 			throw redirect({
 				to: '/signin',
 				search: {

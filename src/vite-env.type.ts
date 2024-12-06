@@ -7,6 +7,7 @@ interface ImportMetaEnv {
 	readonly VITE_DOMAIN: string
 	readonly VITE_HUB_DOMAIN: string
 	readonly VITE_CLERK_DOMAIN: string
+  readonly VITE_CLERK_DEV_DOMAIN: string
 	readonly VITE_HTTPS_DOMAIN: string
 
 }
