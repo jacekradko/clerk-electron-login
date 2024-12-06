@@ -129,7 +129,7 @@ const createWindow = async () => {
   const filter = {
     urls: [
       `https://${import.meta.env.VITE_CLERK_DOMAIN}/*`,
-      "https://*.clerk.accounts.dev/*",
+      `https://${import.meta.env.VITE_CLERK_DEV_DOMAIN}/*`,
     ],
   };
 

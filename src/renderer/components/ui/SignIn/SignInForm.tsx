@@ -7,7 +7,7 @@ import * as z from 'zod'
 import { FieldPath, useForm } from 'react-hook-form'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
 import { HTMLAttributes, useEffect, useState } from 'react'
-import { useAuth, useClerk, useSignIn } from '@clerk/clerk-react'
+import { useAuth, useSession, useSignIn } from '@clerk/clerk-react'
 import { ClerkAPIError, OAuthStrategy } from '@clerk/types'
 import { TwitchIcon } from 'lucide-react'
 import { DiscordLogoIcon } from '@radix-ui/react-icons'
@@ -43,7 +43,7 @@ export const SignInForm = ({ className, ...props }: SignInTypes) => {
 	const [isLoading, setIsLoading] = useState<boolean>(false)
 	const { isLoaded, signIn, setActive } = useSignIn()
 	const { signOut } = useAuth()
-	const { session } = useClerk()
+	const { session, isSignedIn } = useSession()
 	const navigate = useNavigate()
 	const { startOAuthFlow: googleOauthFlow } = useOAuth({ strategy: 'oauth_google' })
 
@@ -53,7 +53,8 @@ export const SignInForm = ({ className, ...props }: SignInTypes) => {
 	})
 
 	useEffect(() => {
-		if (session) {
+    debugger
+		if (session && isSignedIn) {
 			void router.invalidate().then(() => {
 				return navigate({ to: '/' })
 			})

@@ -13,7 +13,7 @@ export const createRouter = () =>
 		// defaultErrorComponent: DefaultCatchBoundary,
 		defaultNotFoundComponent: () => <NotFound />,
 		context: {
-			clerk: undefined!,
+			session: undefined!,
 			queryClient: undefined!
 		}
 	})

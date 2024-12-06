@@ -1,6 +1,6 @@
 
 
-import { useAuth, useClerk } from '@clerk/clerk-react'
+import { useSession } from '@clerk/clerk-react'
 import { Navigate } from '@tanstack/react-router'
 import { signinRoute } from '@/src/app/route-tree'
 
@@ -14,9 +14,8 @@ export const NoMatchAuth = () => {
 }
 
 export const NotFound = () => {
-	const auth = useAuth()
-	const { session } = useClerk()
-	if (auth?.isSignedIn && session) {
+	const { session, isSignedIn } = useSession()
+	if (isSignedIn && session) {
 		return <NoMatch />
 	}
 
