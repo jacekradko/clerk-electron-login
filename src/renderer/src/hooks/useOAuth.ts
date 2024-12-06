@@ -1,4 +1,4 @@
-import { useAuth, useClerk, useSignIn, useSignUp } from '@clerk/clerk-react'
+import { useClerk, useSignIn, useSignUp } from '@clerk/clerk-react'
 import type { OAuthStrategy } from '@clerk/types'
 import { useNavigate } from '@tanstack/react-router'
 

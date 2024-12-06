@@ -26,7 +26,7 @@ export const Signout = () => {
 
   return (
     <>
-      {session?.isSignedIn || isSignedIn ? (
+      {session.isSignedIn ? (
         <Loading />
       ) : (
         <Navigate to={signinRoute.fullPath} />

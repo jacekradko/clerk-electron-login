@@ -10,7 +10,7 @@ export const HubClerkProvider = ({ children }: PropsWithChildren) => {
 		publishableKey: `${import.meta.env.VITE_CLERK_PUBLIC_KEY}`,
 		signInUrl: '/signin',
 		signUpUrl: '/signup',
-		afterSignOutUrl: '/signin',
+		afterSignOutUrl: '/signout',
 		routerPush: (to: string) => router.navigate({ to }),
 		routerReplace: (to: string) => router.navigate({ to }),
     allowedRedirectOrigins: ['clerk://local.hub.electron.vite'],

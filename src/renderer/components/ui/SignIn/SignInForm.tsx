@@ -43,7 +43,6 @@ export const SignInForm = ({ className, ...props }: SignInTypes) => {
 	const [isLoading, setIsLoading] = useState<boolean>(false)
 	const { isLoaded, signIn, setActive } = useSignIn()
 	const { signOut } = useAuth()
-  const auth = useAuth()
 	const { session, isSignedIn } = useSession()
 	const navigate = useNavigate()
 	const { startOAuthFlow: googleOauthFlow } = useOAuth({ strategy: 'oauth_google' })
